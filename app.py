@@ -146,4 +146,4 @@ if __name__ == '__main__':
     print("✍️  منشئ المحتوى التسويقي")
     print("افتح: http://localhost:5555")
     print("="*50)
-    app.run(host='0.0.0.0', port=5555)
+    app.run(host='0.0.0.0', port=int(__import__("os").environ.get("PORT", 5555)))
